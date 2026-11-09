@@ -32,10 +32,10 @@
  <button data-page="users"><span class="ico">♧</span>Pengguna & Hak Akses</button>
  <button data-page="settings"><span class="ico">⚙</span>Pengaturan Sistem</button>
  </nav>
- <div class="side-bottom"><div class="side-note"><strong>Mode Demonstrasi</strong>Data disimpan di browser ini. Gunakan menu pengaturan untuk mengatur identitas dan periode akademik.</div></div>
+ <div class="side-bottom"><div class="side-note"><strong>Mode Aktif</strong>Data disimpan di browser ini. Gunakan menu pengaturan untuk mengatur identitas dan periode akademik.</div></div>
 </aside>
 <main class="main">
- <header class="topbar"><div class="mobile-head"><button class="hamburger" id="hamburger">☰</button><span style="font-weight:800;font-size:12px">SIP-CPL</span></div><div class="crumb">Sistem Informasi <span style="color:#bcc5d2">/</span> <b id="crumb">Dashboard</b></div><div class="top-actions"><span class="status-pill">● Sistem Aktif · Demo</span><div style="text-align:right"><b style="display:block;font-size:11px">Administrator</b><span style="font-size:10px;color:var(--muted)">Akses simulasi</span></div><div class="avatar">AD</div></div></header>
+ <header class="topbar"><div class="mobile-head"><button class="hamburger" id="hamburger">☰</button><span style="font-weight:800;font-size:12px">SIP-CPL</span></div><div class="crumb">D4 Kosmetik dan Tata Kecantikan <span style="color:#bcc5d2">/</span> <b id="crumb">Dashboard</b></div><div class="top-actions"><span class="status-pill">● Sistem Aktif</span><div style="text-align:right"><b style="display:block;font-size:11px">Administrator</b><span style="font-size:10px;color:var(--muted)">Akses Aktif</span></div><div class="avatar">AD</div></div></header>
  <div class="content" id="content"></div>
 </main>
 </div>
@@ -44,12 +44,12 @@
 <script>
 (()=>{'use strict';
 const KEY='sip_cpl_banyuwangi_v1';
-const defaults={university:{name:'Universitas Dr. H. Sumarno - Banyuwangi',short:'UDHSB',address:'Banyuwangi, Jawa Timur',email:'',website:''},settings:{academicYear:'2026/2027',semester:'Ganjil',program:'Sistem Informasi',faculty:'Fakultas Sains dan Teknologi',curriculum:'Kurikulum OBE 2024',defaultTarget:70,passPercent:70},students:[
-{id:'MHS001',nim:'2024001',name:'Aulia Rahmawati',program:'Sistem Informasi',cohort:'2024',class:'SI-A'},
-{id:'MHS002',nim:'2024002',name:'Bima Pratama',program:'Sistem Informasi',cohort:'2024',class:'SI-A'},
-{id:'MHS003',nim:'2024003',name:'Citra Lestari',program:'Sistem Informasi',cohort:'2024',class:'SI-A'},
-{id:'MHS004',nim:'2024004',name:'Dimas Saputra',program:'Sistem Informasi',cohort:'2024',class:'SI-B'},
-{id:'MHS005',nim:'2024005',name:'Eka Wulandari',program:'Sistem Informasi',cohort:'2024',class:'SI-B'}],
+const defaults={university:{name:'POLITEKNIK DARUSSALAM BLOKAGUNG',short:'UDHSB',address:'Banyuwangi, Jawa Timur',email:'',website:''},settings:{academicYear:'2026/2027',semester:'Ganjil',program:'D4 Kosmetik dan Tata Kecantikan',faculty:'Fakultas Kecantikan',curriculum:'Kurikulum OBE 2026',defaultTarget:70,passPercent:70},students:[
+{id:'MHS001',nim:'2024001',name:'Aulia Rahmawati',program:'Sistem Informasi',cohort:'2026',class:'KTK-A'},
+{id:'MHS002',nim:'2024002',name:'Bima Pratama',program:'Sistem Informasi',cohort:'2026',class:'KTK-A'},
+{id:'MHS003',nim:'2024003',name:'Citra Lestari',program:'Sistem Informasi',cohort:'2026',class:'KTK-A'},
+{id:'MHS004',nim:'2024004',name:'Dimas Saputra',program:'Sistem Informasi',cohort:'2026',class:'KTK-B'},
+{id:'MHS005',nim:'2024005',name:'Eka Wulandari',program:'Sistem Informasi',cohort:'2026',class:'KTK-B'}],
 lecturers:[{id:'DSN001',name:'Dr. Rina Puspitasari, M.Kom.',email:'rina@example.ac.id',department:'Sistem Informasi'},{id:'DSN002',name:'Achmad Islahi, S.Kom., M.Pd.',email:'achmad@example.ac.id',department:'Koding & Kecerdasan Artifisial'}],
 courses:[{id:'SI101',name:'Pengantar Sistem Informasi',sks:3,semester:'1',lecturerId:'DSN001'},{id:'SI202',name:'Analisis Proses Bisnis',sks:3,semester:'3',lecturerId:'DSN001'},{id:'SI204',name:'Basis Data',sks:4,semester:'3',lecturerId:'DSN002'}],
 cpls:[{id:'CPL-01',description:'Mampu menerapkan konsep dan prinsip dasar bidang sistem informasi untuk menyelesaikan masalah.',category:'Pengetahuan',target:70,active:'Aktif'},{id:'CPL-02',description:'Mampu menganalisis kebutuhan dan merancang solusi sistem informasi yang sesuai.',category:'Keterampilan Khusus',target:75,active:'Aktif'},{id:'CPL-03',description:'Mampu berkomunikasi dan bekerja sama secara efektif serta bertanggung jawab.',category:'Sikap',target:70,active:'Aktif'},{id:'CPL-04',description:'Mampu menggunakan teknologi digital secara etis dan bertanggung jawab.',category:'Keterampilan Umum',target:70,active:'Aktif'}],
